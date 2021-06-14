@@ -33,7 +33,6 @@
 
 <body>
     <div class="container" style="background-color:bisque;">
-
         <div id="projects" class="slider">
             <div class="sc-8c1f2v-0 dLeBHm">
                 <header class="sc-184bfsn-0 efzTcK">
