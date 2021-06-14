@@ -21,5 +21,10 @@ Route::get('main.pilihan/', function () {
     return view('main.pilihan');
 });
 
+//Convert Menu
+Route::get('convert.imgtotxt/', function () {
+    return view('convert.imgtotxt');
+});
+
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

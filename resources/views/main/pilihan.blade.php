@@ -44,7 +44,7 @@
                     <div class="sc-1k9qdlb-0 lcJXfA">
                         <ul class="sc-1sr2v2y-0 iUiZBt">
                             <li class="ak39fa-0 bhAFtM">
-                                <div class="ojwc4z-0 jkSeLq"><a class="sc-1bu7qfl-0 lfMGmO ojwc4z-2 gZBElH" href="#">
+                                <div class="ojwc4z-0 jkSeLq"><a class="sc-1bu7qfl-0 lfMGmO ojwc4z-2 gZBElH" href="{{url('convert.imgtotxt')}}">
                                         <div tabindex="-1" class="ojwc4z-6 kPnmgt">Image To Text</div>
                                     </a>
                                     <div class="sc-1gyxcpm-0 csDfHB ojwc4z-4 dOHSmX" style="width:32px;height:32px"><svg viewBox="0 0 32 32" fill="none" xmlns="../www.w3.org/2000/svg.html">
