@@ -47,7 +47,7 @@
             <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Zigo</a> -->
 
             <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a>
+            <a class="navbar-brand logo-image" href="{{url('/')}}"><img src="images/logo.svg" alt="alternative"></a>
 
             <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
                 <span class="navbar-toggler-icon"></span>
@@ -56,13 +56,11 @@
             <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#projects">Projects</a>
+                        <a class="nav-link page-scroll" href="#tools">Menu</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#registration">Call</a>
-                    </li>
+                   
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drop</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tools</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
                             <a class="dropdown-item page-scroll" href="article.html">Article Details</a>
                             <div class="dropdown-divider"></div>
@@ -71,9 +69,7 @@
                             <a class="dropdown-item page-scroll" href="privacy.html">Privacy Policy</a>
                         </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#contact">Contact</a>
-                    </li>
+                   
                 </ul>
                 <span class="nav-item social-icons">
                     <span class="fa-stack">

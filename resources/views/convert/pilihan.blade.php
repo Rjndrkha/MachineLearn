@@ -32,7 +32,7 @@
 </head>
 
 <body>
-    <div class="container" id="tools" style="background-color: beige;");" >
+    <div class="container" style="background-color: beige;");" >
 
         <div id="projects" class="slider">
             <div class="sc-8c1f2v-0 dLeBHm">
