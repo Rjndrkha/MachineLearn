@@ -49,7 +49,7 @@
             <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Zigo</a> -->
 
             <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="{{url('/')}}"><img src="images/logo.svg" alt="alternative"></a>
+            <a class="navbar-brand logo-image" href="{{url('/')}}"><img src="images/logoML.png" alt="alternative"></a>
 
             <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
                 <span class="navbar-toggler-icon"></span>
