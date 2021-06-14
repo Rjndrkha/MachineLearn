@@ -56,11 +56,11 @@
                                                 <path d="M9 7L10 6L16 12L10 18L9 17L14.17 12L9 7Z"></path>
                                             </svg></div>
                                     </div>
-                                    <p class="ojwc4z-5 jZEeUz">Reduce the size of your PDF without losing quality</p>
+                                    <p class="ojwc4z-5 jZEeUz">Best Convert With Great Scanner, Convert your Image To Text</p>
                                 </div>
                             </li>
                             <li class="ak39fa-0 bhAFtM">
-                                <div class="ojwc4z-0 jkSeLq"><a class="sc-1bu7qfl-0 lfMGmO ojwc4z-2 gZBElH" href="#">
+                                <div class="ojwc4z-0 jkSeLq"><a class="sc-1bu7qfl-0 lfMGmO ojwc4z-2 gZBElH" href="{{url('convert.imgtopdf')}}">
                                         <div tabindex="-1" class="ojwc4z-6 kPnmgt">Image To PDF</div>
                                     </a>
                                     <div class="sc-1gyxcpm-0 csDfHB ojwc4z-4 dOHSmX" style="width:32px;height:32px"><svg viewBox="0 0 32 32" fill="none" xmlns="../www.w3.org/2000/svg.html">
@@ -75,12 +75,12 @@
                                                 <path d="M9 7L10 6L16 12L10 18L9 17L14.17 12L9 7Z"></path>
                                             </svg></div>
                                     </div>
-                                    <p class="ojwc4z-5 jZEeUz">Convert Word, PowerPoint and Excel files to and from PDF</p>
+                                    <p class="ojwc4z-5 jZEeUz">Convert Image To PDF</p>
                                 </div>
                             </li>
                             <li class="ak39fa-0 bhAFtM">
-                                <div class="ojwc4z-0 jkSeLq"><a class="sc-1bu7qfl-0 lfMGmO ojwc4z-2 gZBElH" href="#">
-                                        <div tabindex="-1" class="ojwc4z-6 kPnmgt">PDF to WORD</div>
+                                <div class="ojwc4z-0 jkSeLq"><a class="sc-1bu7qfl-0 lfMGmO ojwc4z-2 gZBElH" href="{{url('convert.pdftoword')}}">
+                                        <div tabindex="-1" class="ojwc4z-6 kPnmgt">PDF To WORD</div>
                                     </a>
                                     <div class="sc-1gyxcpm-0 csDfHB ojwc4z-4 dOHSmX" style="width:32px;height:32px"><svg viewBox="0 0 32 32" fill="none" xmlns="../www.w3.org/2000/svg.html">
                                             <path d="M0 4C0 1.79086 1.79086 0 4 0H28C30.2091 0 32 1.79086 32 4V28C32 30.2091 30.2091 32 28 32H4C1.79086 32 0 30.2091 0 28V4Z" fill="#FF8000"></path>
@@ -94,7 +94,7 @@
                                                 <path d="M9 7L10 6L16 12L10 18L9 17L14.17 12L9 7Z"></path>
                                             </svg></div>
                                     </div>
-                                    <p class="ojwc4z-5 jZEeUz">Convert PowerPoint presentations to PDF documents</p>
+                                    <p class="ojwc4z-5 jZEeUz">Convert PDF to Word documents</p>
                                 </div>
                             </li>
                         </ul>
