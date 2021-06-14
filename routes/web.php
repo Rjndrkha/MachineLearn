@@ -25,6 +25,12 @@ Route::get('main.pilihan/', function () {
 Route::get('convert.imgtotxt/', function () {
     return view('convert.imgtotxt');
 });
+Route::get('convert.imgtopdf/', function () {
+    return view('convert.imgtopdf');
+});
+Route::get('convert.pdftoword/', function () {
+    return view('convert.pdftoword');
+});
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
