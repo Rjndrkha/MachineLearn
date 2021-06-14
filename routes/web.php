@@ -17,6 +17,9 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('main.pilihan/', function () {
+    return view('main.pilihan');
+});
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

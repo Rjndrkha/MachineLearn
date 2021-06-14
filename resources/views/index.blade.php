@@ -29,7 +29,8 @@
     <link href="css/fontawesome-all.css" rel="stylesheet">
     <link href="css/swiper.css" rel="stylesheet">
 	<link href="css/magnific-popup.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
+
+    <link href="css/styles.css" rel="stylesheet">
 	
 	<!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
@@ -104,7 +105,7 @@
                         <h1 class="h1-large">Kemudahan disetiap kebutuhan anda</h1>
                         <p class="p-large">Dukungan Convert untuk memudahkan pekerjaan anda </p>
                         <a class="btn-solid-lg page-scroll" href="#services">Discover</a>
-                        <a class="btn-outline-lg page-scroll" href="#">Lets Convert!</a>
+                        <a class="btn-outline-lg page-scroll" href="{{url('main.pilihan')}}">Lets Convert!</a>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of div -->
                 <div class="col-lg-6 col-xl-7">
@@ -149,72 +150,6 @@
     </header> <!-- end of header -->
     <svg class="frame-decoration" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1920 150"><defs><style>.cls-1{fill:#f4f9ff;}</style></defs><title>frame-decoration</title><path class="cls-1" d="M0,81.411c143,57.608,255.5,64.833,328.644,61.616,147.721-6.5,183.881-57.563,320.829-51.347,143,6.491,167.826,65.1,293,58.193,109.095-6.018,115.68-51.946,225.251-54.77,113.58-2.928,138.8,45.589,251.189,39.936,104.012-5.231,109.713-48.158,197.369-44.5,89.549,3.736,124.375,50.226,227.622,47.924a353.34,353.34,0,0,0,76.1-10.269V0.5H0V81.411Z" transform="translate(0 -0.5)"/></svg>
     <!-- end of header -->
-
-
-    <!-- Services -->
-    <div id="services" class="cards-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2-heading">Software Integration Services For Business Process Automation</h2>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-image">
-                            <i class="fas fa-atom"></i>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Project Analysis</h5>
-                            <p>Our team of specialized consultants will analyse and evaluate the <a href="#your-link">project</a></p>
-                        </div>
-                    </div>
-                    <!-- end of card -->
-
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-image">
-                            <i class="fas fa-list-alt"></i>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Resource Planning</h5>
-                            <p>We make sure all the necessary resources are available at a moment's notice</p>
-                        </div>
-                    </div>
-                    <!-- end of card -->
-
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-image">
-                            <i class="fas fa-cogs"></i>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Solution Integration</h5>
-                            <p>You need a flexible and reliable solution to ensure your business long term growth</p>
-                        </div>
-                    </div>
-                    <!-- end of card -->
-
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-image">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Permanent Support</h5>
-                            <p>Each project is sealed with a comprehensive 12-month support contract</p>
-                        </div>
-                    </div>
-                    <!-- end of card -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of cards-1 -->
-    <!-- end of services -->
 
 
     <!-- Solutions -->
@@ -686,6 +621,52 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
+                <!-- Card -->
+                <div class="card">
+                        <div class="card-image">
+                            <img class="img-fluid" src="images/team-member-1.svg" alt="alternative">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">Lacy Whitelong</h6>
+                            <p>Business Developer</p>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-fluid" src="images/team-member-1.svg" alt="alternative">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">Lacy Whitelong</h6>
+                            <p>Business Developer</p>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- end of card -->
                     
                     <!-- Card -->
                     <div class="card">
@@ -920,7 +901,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-small">Copyright © <a href="https://inovatik.com/">Template by Inovatik</a></p>
+                    <p class="p-small">Copyright ©2021 <a href="https://Polinema.ac.id">Machine Learning Group</a></p>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
