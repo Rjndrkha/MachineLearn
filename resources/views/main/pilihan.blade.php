@@ -32,8 +32,7 @@
 </head>
 
 <body>
-    <div class="container" id="tools" style="background-color: beige;
-    background-image:https://www.publicdomainpictures.net/pictures/320000/velka/background-image.png ;")>
+    <div class="container" id="tools" style="background-color: beige;")>
 
         <div id="projects" class="slider">
             <div class="sc-8c1f2v-0 dLeBHm">

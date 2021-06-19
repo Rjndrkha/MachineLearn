@@ -6,7 +6,7 @@
 
 <head>
     <meta charset="utf-8">
-    
+
 
     <!-- SEO Meta Tags -->
     <meta name="description" content="Simple Tools To Convert">
@@ -59,7 +59,7 @@
                         <form class="sc-1oqtgb8-1 fqHzAf">
                             <label class="sc-1oqtgb8-2 fqPWeo">
 
-                                <input type="file" id="input_image" multiple="" accept="application/pdf,.pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,.docx,application/msword,.doc,application/vnd.openxmlformats-officedocument.presentationml.presentation,.pptx,application/vnd.ms-powerpoint,.ppt,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,.xlsx,application/vnd.ms-excel,.xls,image/bmp,.bmp,image/jpeg,.jpg,.jpeg,image/png,.png,image/tiff,.tif,.tiff" class="sc-1oqtgb8-0 fqzcVW" />
+                                <input type="file" id="imgData" multiple="" accept="application/pdf,.pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,.docx,application/msword,.doc,application/vnd.openxmlformats-officedocument.presentationml.presentation,.pptx,application/vnd.ms-powerpoint,.ppt,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,.xlsx,application/vnd.ms-excel,.xls,image/bmp,.bmp,image/jpeg,.jpg,.jpeg,image/png,.png,image/tiff,.tif,.tiff" class="sc-1oqtgb8-0 fqzcVW" />
                                 <div class="sc-1rkezdt-4 cwMDkh">
                                     <div class="sc-1rkezdt-5 cwUZOq">
                                         <div class="sc-2xfn8l-0 bxyVaO sc-6w1ep9-0 iTXuYA"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 60">
@@ -121,4 +121,33 @@
 
 
 </body>
+<script>
+    var getImageFromUrl = function(url, callback) {
+        var img = new Image();
+
+        img.onError = function() {
+            alert('Cannot load image: "' + url + '"');
+        };
+        img.onload = function() {
+            callback(img);
+        };
+        img.src = url;
+    }
+
+
+    var createPDF = function(imgData) {
+        var doc = new jsPDF();
+
+
+
+        doc.addImage(imgData, 'JPEG', 10, 10, 50, 50, 'monkey');
+        doc.addImage('monkey', 70, 10, 100, 120); // use the cached 'monkey' image, JPEG is optional regardless
+
+
+
+        doc.output('datauri');
+    }
+
+    getImageFromUrl('thinking-monkey.jpg', createPDF);
+</script>
 <html>
