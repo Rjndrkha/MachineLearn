@@ -37,7 +37,7 @@
 </head>
 
 <body>
-    <div class="sc-1ttxsn1-0 fxCLCz" style="padding-left: 100px;">
+    <div class="sc-1ttxsn1-0 fxCLCz" id="tools" style="padding-left: 100px;">
         <div class="sc-1ttxsn1-1 hvHwmD">
             <div class="sc-17y9jfw-1 lpeKGy">
                 <div class="sc-17y9jfw-5 qNym">
@@ -53,7 +53,7 @@
     </div>
 
     <!-- UPLOAD -->
-    <div class="zone">
+    <div class="zone" >
 
         <div id="dropZ">
             <i class="fa fa-cloud-upload"></i>

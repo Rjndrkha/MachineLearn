@@ -65,11 +65,11 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
-                            <a class="dropdown-item page-scroll" href="article.html">Article Details</a>
+                            <a class="dropdown-item page-scroll" href="#">Article Details</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item page-scroll" href="terms.html">Terms Conditions</a>
+                            <a class="dropdown-item page-scroll" href="#">Terms Conditions</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item page-scroll" href="privacy.html">Privacy Policy</a>
+                            <a class="dropdown-item page-scroll" href="#">Privacy Policy</a>
                         </div>
                     </li>
 
