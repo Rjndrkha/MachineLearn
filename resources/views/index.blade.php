@@ -11,15 +11,6 @@
     <meta name="description" content="Simple Tools To Convert">
     <meta name="author" content="Polinema">
 
-    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
-    <meta property="og:site_name" content="" /> <!-- website name -->
-    <meta property="og:site" content="" /> <!-- website link -->
-    <meta property="og:title" content="" /> <!-- title shown in the actual shared post -->
-    <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-    <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
-    <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
-    <meta property="og:type" content="article" />
-
     <!-- Webpage Title -->
     <title>Simple App To Convert, Make it all easy! </title>
 
@@ -27,16 +18,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/swiper.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/magnific-popup.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
     
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/swiper.css" rel="stylesheet">
-    <link href="css/magnific-popup.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-
-
-
     <!-- Favicon  -->
-    <link rel="icon" href="images/favicon.png">
+    <link rel="icon" href="{{ asset('images/favicon.png') }}">
 </head>
 
 <body data-spy="scroll" data-target=".fixed-top">
@@ -49,7 +38,7 @@
             <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Zigo</a> -->
 
             <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="index.html"><img src="images/logoML.png" alt="alternative"></a>
+            <a class="navbar-brand logo-image" href="index.html"><img src="{{ asset('images/logoML.png') }}" alt="alternative"></a>
 
             <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
                 <span class="navbar-toggler-icon"></span>
@@ -109,14 +98,9 @@
                         <h1 class="h1-large">Kemudahan disetiap kebutuhan anda</h1>
                         <p class="p-large">Dukungan Convert untuk memudahkan pekerjaan anda </p>
                         <a class="btn-solid-lg page-scroll" href="#projects">Discover</a>
-                        <a class="btn-outline-lg page-scroll" href="{{url('main.pilihan')}}">Lets Convert!</a>
+                        <a class="btn-outline-lg page-scroll" href="{{ route('home') }}">Lets Convert!</a>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of div -->
-                <div class="col-lg-6 col-xl-7">
-                    <div class="image-container">
-                        <img class="img-fluid" src="https://smallpdf.com/build/1d4ffb5a45e5dfa96145d434ab0da9bd.svg" style="height: fit-content;padding-bottom: 30px;width: fit-content;" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
                 <div class="col-lg-12">
@@ -821,12 +805,12 @@
 
 
     <!-- Scripts -->
-    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
-    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="{{ asset('js/jquery.min.js') }}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script> <!-- Bootstrap framework -->
+    <script src="{{ asset('js/jquery.easing.min.js') }}"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="{{ asset('js/swiper.min.js') }}"></script> <!-- Swiper for image and text sliders -->
+    <script src="{{ asset('js/jquery.magnific-popup.js') }}"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="{{ asset('js/scripts.js') }}"></script> <!-- Custom scripts -->
 </body>
 
 <!-- Mirrored from inovatik.com/zigo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Jun 2021 12:37:59 GMT -->

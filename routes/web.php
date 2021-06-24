@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,20 +18,4 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('main.pilihan/', function () {
-    return view('main.pilihan');
-});
-
-//Convert Menu
-Route::get('convert.imgtotxt/', function () {
-    return view('convert.imgtotxt');
-});
-Route::get('convert.imgtopdf/', function () {
-    return view('convert.imgtopdf');
-});
-Route::get('convert.pdftoword/', function () {
-    return view('convert.pdftoword');
-});
-
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [HomeController::class, 'index'])->name('home');
