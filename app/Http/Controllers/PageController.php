@@ -18,8 +18,7 @@ class PageController extends Controller
 
     public function storeImage(Request $request) {        
         $request->validate([
-            'images' => 'required',
-            'images.*' => 'jpg,jpeg,png|max:2000'
+            'images' => 'required|mimes:jpg,jpeg,png'
         ]);
         $image_name = $request->file('images')->store('images', 'public');    
         return $image_name;
