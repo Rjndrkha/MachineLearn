@@ -18,10 +18,11 @@
         <textarea style="position:center;background-color:antiquewhite" id="image-text" rows="15" cols="80"></textarea>        
     </div>
 </div>
-
 <!-- JAVASCRIPT OCR -->
 <script src='https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js'></script>
 <!-- JAVASCRIPT OCR END -->
+
+
 
 <script>
     //PROGRESS BAR PROCESS

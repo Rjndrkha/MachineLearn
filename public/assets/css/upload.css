@@ -73,17 +73,17 @@
     border-radius: 5px;
   }
   .zone label {
-    background: #fff;
+    
     color: #eb6a5a;
-    display: inline-block;
+
     font-size: 1.2em;
-    line-height: 50px;
-    padding: 0;
+    line-height: 0px;
+    padding: 190px;
     text-align: center;
     white-space: nowrap;
     text-transform: uppercase;
     font-weight: 400;
-    box-shadow: 0 1px 1px gray;
+
   }
   .zone input[type="file"] {
     opacity: 0;
@@ -110,7 +110,7 @@
     color: #eb6a5a;
   }
   .zone.hover label {
-    background: #fff;
+  
     color: #eb6a5a;
   }
   .zone.fade {
