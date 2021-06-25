@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Uploads;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class UploadsController extends Controller
 {
@@ -52,7 +53,7 @@ class UploadsController extends Controller
             echo 'Gagal';
         }
     }
-    }
+    
 
     /**
      * Display the specified resource.
