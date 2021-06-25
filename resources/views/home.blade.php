@@ -53,7 +53,7 @@
     </div>
 
     <!-- UPLOAD -->
-    <form action="/result" method="post" enctype="multipart/form-data">
+    <form action="{{ route('uploads.store') }}" method="post" enctype="multipart/form-data">
         @csrf
         <div class="zone">
 
@@ -66,9 +66,9 @@
               
                 <div class="selectFile">
 
-                    <input type="file" name="image" id="file">
+                    <input type="file" name="filename" >
             
-                    <input type="submit" name="Upload">
+                    <input type="submit"  class="btn btn-info" name="Upload">
 
                 </div>
                 <br>

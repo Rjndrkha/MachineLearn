@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\UploadsController;
 use Illuminate\Http\Request;
 
 /*
@@ -25,3 +26,6 @@ Route::post('/result', function (Request $request) {
 });
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
+
+Route::get('/uploads', 'UploadsController@index')->name('uploads');
+Route::post('/save','UploadsController@store')->name('uploads.store');
