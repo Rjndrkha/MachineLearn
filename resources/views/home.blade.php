@@ -66,9 +66,9 @@
               
                 <div class="selectFile">
 
-                    <input type="file" name="filename" >
+                    <input type="file" name="filename" id="file">
             
-                    <input type="submit"  class="btn btn-info" name="Upload">
+                    <input type="submit" class="btn btn-info" name="Upload">
 
                 </div>
                 <br>

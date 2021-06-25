@@ -15,7 +15,7 @@ class UploadsController extends Controller
      */
     public function index()
     {
-        //
+        return view('home');
     }
 
     /**
