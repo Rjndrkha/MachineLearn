@@ -1,94 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<!-- Mirrored from inovatik.com/zigo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Jun 2021 12:37:48 GMT -->
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Simple Tools To Convert">
-    <meta name="author" content="Polinema">
-
-    <!-- Webpage Title -->
-    <title>Simple App To Convert, Make it all easy! </title>
-
-    <!-- Styles -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
-    <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/swiper.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/magnific-popup.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
-    
-    <!-- Favicon  -->
-    <link rel="icon" href="{{ asset('images/favicon.png') }}">
-</head>
-
-<body data-spy="scroll" data-target=".fixed-top">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
-        <div class="container">
-
-            <!-- Text Logo - Use this if you don't have a graphic logo -->
-            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Zigo</a> -->
-
-            <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="index.html"><img src="{{ asset('images/logoML.png') }}" alt="alternative"></a>
-
-            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#header">Services <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#registration">Team</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drop</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown01">
-                            <a class="dropdown-item page-scroll" href="article.html">Article Details</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item page-scroll" href="terms.html">Terms Conditions</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item page-scroll" href="privacy.html">Privacy Policy</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-                <span class="nav-item social-icons">
-                    <span class="fa-stack">
-                        <a href="#your-link">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-facebook-f fa-stack-1x"></i>
-                        </a>
-                    </span>
-                    <span class="fa-stack">
-                        <a href="#your-link">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-twitter fa-stack-1x"></i>
-                        </a>
-                    </span>
-                </span>
-            </div> <!-- end of navbar-collapse -->
-        </div> <!-- end of container -->
-    </nav> <!-- end of navbar -->
-    <!-- end of navigation -->
-
-
+@extends('layouts.app')
+@section('content')
     <!-- Header -->
     <header id="header" class="header">
         <div class="container">
@@ -104,9 +15,7 @@
             </div> <!-- end of row -->
             <div class="row">
                 <div class="col-lg-12">
-
-                    <!-- Image Slider -->
-                    
+                    <!-- Image Slider -->                
                     <div class="slider-container">
                         <div class="swiper-container image-slider">
                         
@@ -789,30 +698,4 @@
         </div> <!-- end of container -->
     </div> <!-- end of footer -->
     <!-- end of footer -->
-
-
-    <!-- Copyright -->
-    <div class="copyright bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="p-small">Copyright ©2021 <a href="https://Polinema.ac.id">Machine Learning Group</a></p>
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of copyright -->
-    <!-- end of copyright -->
-
-
-    <!-- Scripts -->
-    <script src="{{ asset('js/jquery.min.js') }}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="{{ asset('js/bootstrap.min.js') }}"></script> <!-- Bootstrap framework -->
-    <script src="{{ asset('js/jquery.easing.min.js') }}"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="{{ asset('js/swiper.min.js') }}"></script> <!-- Swiper for image and text sliders -->
-    <script src="{{ asset('js/jquery.magnific-popup.js') }}"></script> <!-- Magnific Popup for lightboxes -->
-    <script src="{{ asset('js/scripts.js') }}"></script> <!-- Custom scripts -->
-</body>
-
-<!-- Mirrored from inovatik.com/zigo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Jun 2021 12:37:59 GMT -->
-
-</html>
+@endsection

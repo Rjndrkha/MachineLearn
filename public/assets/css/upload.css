@@ -30,7 +30,7 @@
   
   .zone {
     margin: auto;
-    position: absolute;
+    /* position: absolute; */
     top: 100px;
     left: 0;
     bottom: 50px;

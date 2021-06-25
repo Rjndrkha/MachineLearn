@@ -19,74 +19,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&amp;display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     
-    <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/swiper.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/magnific-popup.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="{{ asset('assets/css/swiper.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/magnific-popup.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/styles.css') }}" rel="stylesheet">
+    @if (Route::is('home'))  
+    <link href="{{ asset('assets/css/upload.css') }}" rel="stylesheet">
+    @endif
     
     <!-- Favicon  -->
     <link rel="icon" href="{{ asset('images/favicon.png') }}">
 </head>
-@section('content')
+
 <body data-spy="scroll" data-target=".fixed-top">
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+    @include('layouts.navigation')
+    @yield('content')       
+    <!-- Copyright -->
+    <div class="copyright bg-gray">
         <div class="container">
-
-            <!-- Text Logo - Use this if you don't have a graphic logo -->
-            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Zigo</a> -->
-
-            <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="{{url('/')}}"><img src="images/logoML.png" alt="alternative"></a>
-
-            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#tools">Tools</a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown01">
-                            <a class="dropdown-item page-scroll" href="#">Article Details</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item page-scroll" href="#">Terms Conditions</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item page-scroll" href="#">Privacy Policy</a>
-                        </div>
-                    </li>
-
-                </ul>
-                <span class="nav-item social-icons">
-                    <span class="fa-stack">
-                        <a href="#your-link">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-facebook-f fa-stack-1x"></i>
-                        </a>
-                    </span>
-                    <span class="fa-stack">
-                        <a href="#your-link">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-twitter fa-stack-1x"></i>
-                        </a>
-                    </span>
-                </span>
-            </div> <!-- end of navbar-collapse -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright ©2021 <a href="https://www.polinema.ac.id/">Machine Learning Group</a></p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
         </div> <!-- end of container -->
-    </nav> <!-- end of navbar -->
-    <!-- end of navigation -->
-
-    <!-- Scripts -->
-    <script src="{{ asset('js/jquery.min.js') }}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="{{ asset('js/bootstrap.min.js') }}"></script> <!-- Bootstrap framework -->
-    <script src="{{ asset('js/jquery.easing.min.js') }}"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="{{ asset('js/swiper.min.js') }}"></script> <!-- Swiper for image and text sliders -->
-    <script src="{{ asset('js/jquery.magnific-popup.js') }}"></script> <!-- Magnific Popup for lightboxes -->
-    <script src="{{ asset('js/scripts.js') }}"></script> <!-- Custom scripts -->
+    </div> <!-- end of copyright -->
+    
+    <!-- Scripts -->    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="{{ asset('assets/js/jquery.easing.min.js') }}"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="{{ asset('assets/js/jquery.magnific-popup.js') }}"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="{{ asset('assets/js/scripts.js') }}"></script> <!-- Custom scripts -->    
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
 </body>
-
+<!-- Mirrored from inovatik.com/zigo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Jun 2021 12:37:59 GMT -->
 </html>
