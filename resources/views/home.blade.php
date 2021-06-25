@@ -37,7 +37,7 @@
 </head>
 
 <body>
-    <div class="sc-1ttxsn1-0 fxCLCz" id="tools" style="padding-left: 100px;">
+    <div class="sc-1ttxsn1-0 fxCLCz" id="tools" style="padding-left: 150px;">
         <div class="sc-1ttxsn1-1 hvHwmD">
             <div class="sc-17y9jfw-1 lpeKGy">
                 <div class="sc-17y9jfw-5 qNym">
@@ -53,40 +53,46 @@
     </div>
 
     <!-- UPLOAD -->
-    <div class="zone" >
+    <form action="/result" method="post" enctype="multipart/form-data">
+        @csrf
+        <div class="zone">
 
-        <div id="dropZ">
-            <i class="fa fa-cloud-upload"></i>
-            <div>Drag and drop your Image here</div>
-            <span>OR</span>
-            <div class="selectFile">
-                <label for="file">Select Image</label>
-                <input type="file" name="files[]" id="file">
+            <div id="dropZ">
+                <i class="fa fa-cloud-upload"></i>
+                <div>Drag and drop your Image here
+                    <label for="file"></label>
+                </div>
+
+              
+                <div class="selectFile">
+
+                    <input type="file" name="image" id="file">
+            
+                    <input type="submit" name="Upload">
+
+                </div>
+                <br>
+                <p style="background-color: white;">Converter Progress 
+        
+                    <progress id="progressbar" min="0" max="1" value="0" />
+                </p>
+
+
             </div>
-            <p>OCR JS Working Properly</p>
+
         </div>
 
-    </div>
+    </form>
 
-    <br><br><br><br>
-    <br><br><br><br>
-    <br><br><br><br>
-    <br><br><br><br>
+    <br><br><br><br><br><br>
+
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+
 
 
     <!-- END UPLOAD -->
 
-    <div class="container">
-        <h1 class="sc-17y9jfw-2 lpnhkH">Result</h1>
-        <h2 class="sc-17y9jfw-3 lpvDOQ">Don't hesitate to use our website again</h2>
-        <br>
-        <textarea style="position:center;background-color:antiquewhite" id="image-text" rows="15" cols="140"></textarea>
-        <progress id="progressbar" min="0" max="1" value="0" />
-
-    </div>
-
-
-    <!-- Copyright -->
     <div class="copyright bg-gray">
         <div class="container">
             <div class="row">
@@ -98,40 +104,21 @@
     </div> <!-- end of copyright -->
     <!-- end of copyright -->
 
-
-
 </body>
+
+
+
+
 <!-- JAVASCRIPT OCR -->
 <script src='https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js'></script>
 <!-- JAVASCRIPT OCR END -->
 
+
+
 <script>
-    //PROGRESS BAR PROCESS
 
-    document.addEventListener('DOMContentLoaded', function() {
-        var input_image = document.getElementById('file');
-        input_image.addEventListener('change', handleInputChange);
-    });
-
-    function handleInputChange(event) {
-        var input = event.target;
-        var file = input.files[0];
-        console.log(file);
-        Tesseract.recognize(file)
-            .progress(function(message) {
-                document.getElementById('progressbar').value = message.progress;
-                console.log(message);
-            })
-            .then(function(result) {
-                var contentArea = document.getElementById('image-text');
-                contentArea.innerHTML = result.text;
-                console.log(result);
-            })
-            .catch(function(err) {
-                console.error(err);
-            });
-    }
 </script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="js/drop.js"></script>
 <html>
