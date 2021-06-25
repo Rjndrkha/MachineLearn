@@ -35,14 +35,10 @@
     @include('layouts.navigation')
     @yield('content')       
     <!-- Copyright -->
-    <div class="copyright bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="p-small">Copyright ©2021 <a href="https://www.polinema.ac.id/">Machine Learning Group</a></p>
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
+    <div class="copyright bg-gray mt-3 align-middle">                
+        <span class="align-middle">
+            <p class="p-small pt-4">Copyright ©2021 <a href="https://www.polinema.ac.id/">Machine Learning Group</a></p>
+        </span>
     </div> <!-- end of copyright -->
     
     <!-- Scripts -->    

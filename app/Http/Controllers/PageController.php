@@ -3,11 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
 
-class HomeController extends Controller
+class PageController extends Controller
 {
     public function index()
+    {
+        return view('index');
+    }
+
+    public function home()
     {
         return view('home');
     }
@@ -18,10 +22,11 @@ class HomeController extends Controller
             'images.*' => 'jpg,jpeg,png|max:2000'
         ]);
         $image_name = $request->file('images')->store('images', 'public');    
-        return $this->result($image_name);
+        return $image_name;
     }
     
-    public function result($image_name) {                
+    public function result(Request $request) {     
+        $image_name = $this->storeImage($request);
         return view('result', ['image_name' => $image_name]);
     }
 }

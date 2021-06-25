@@ -1,8 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\UploadsController;
+use App\Http\Controllers\PageController;
 use Illuminate\Http\Request;
 
 /*
@@ -15,17 +14,7 @@ use Illuminate\Http\Request;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('index');
-})->name('index');
-
-Route::post('/result', function (Request $request) {
-    $request->image->store('images/store','public');
-    return 'SUCCESS';
-});
-
-Route::get('/home', [HomeController::class, 'index'])->name('home');
-
-Route::get('/uploads', 'UploadsController@index')->name('uploads');
-Route::post('/save','UploadsController@store')->name('uploads.store');
+Route::get('/', [PageController::class, 'index'])->name('index');
+Route::get('/home', [PageController::class, 'home'])->name('home');
+Route::post('/storeImage', [PageController::class, 'storeImage'])->name('store_image');
+Route::post('/result', [PageController::class, 'result'])->name('result');
