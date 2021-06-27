@@ -11,7 +11,14 @@
                         <a class="btn-solid-lg page-scroll" href="#projects">Discover</a>
                         <a class="btn-outline-lg page-scroll" href="{{ route('home') }}">Lets Convert!</a>
                     </div> <!-- end of text-container -->
+                    
                 </div> <!-- end of div -->
+                <div class="col-lg-6 col-xl-7">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/header.svg" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+
             </div> <!-- end of row -->
             <div class="row">
                 <div class="col-lg-12">
